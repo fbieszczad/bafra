@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="KAZET – profesjonalne usługi spawalnicze. Spawanie MIG/MAG, TIG, MMA. Konstrukcje stalowe, ślusarstwo, obróbka metali. Szybko, solidnie, z gwarancją." />
+  <meta name="keywords" content="spawalnictwo, spawanie, MIG MAG, TIG, konstrukcje stalowe, usługi spawalnicze, ślusarz" />
+  <title>KAZET – Profesjonalne Usługi Spawalnicze</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NAWIGACJA ===== -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#hero" class="nav__logo">
+        <span class="logo-kaz">KA</span><span class="logo-zet">ZET</span>
+      </a>
+
+      <ul class="nav__menu" id="navMenu">
+        <li><a href="#uslugi" class="nav__link">Usługi</a></li>
+        <li><a href="#o-nas" class="nav__link">O nas</a></li>
+        <li><a href="#realizacje" class="nav__link">Realizacje</a></li>
+        <li><a href="#dlaczego-my" class="nav__link">Dlaczego my</a></li>
+        <li><a href="#kontakt" class="nav__link">Kontakt</a></li>
+        <li><a href="tel:+48000000000" class="nav__cta">
+          <i class="fas fa-phone"></i> Zadzwoń
+        </a></li>
+      </ul>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <div class="hero__bg">
+      <div class="hero__sparks" id="sparks"></div>
+      <div class="hero__overlay"></div>
+    </div>
+
+    <div class="hero__content container">
+      <div class="hero__badge reveal">
+        <i class="fas fa-award"></i> Ponad 15 lat doświadczenia
+      </div>
+      <h1 class="hero__title reveal">
+        Spawamy<br />
+        <span class="hero__title--accent">z pasją</span><br />
+        i precyzją
+      </h1>
+      <p class="hero__desc reveal">
+        Profesjonalne usługi spawalnicze dla firm i klientów indywidualnych.<br />
+        MIG/MAG · TIG · MMA · Konstrukcje stalowe · Ślusarstwo
+      </p>
+      <div class="hero__actions reveal">
+        <a href="#kontakt" class="btn btn--primary">
+          <i class="fas fa-envelope"></i> Zapytaj o wycenę
+        </a>
+        <a href="#uslugi" class="btn btn--ghost">
+          <i class="fas fa-chevron-down"></i> Zobacz usługi
+        </a>
+      </div>
+    </div>
+
+    <div class="hero__scroll">
+      <div class="scroll-indicator"></div>
+    </div>
+  </section>
+
+  <!-- ===== STATS ===== -->
+  <section class="stats">
+    <div class="container stats__grid">
+      <div class="stat-item">
+        <span class="stat-number" data-target="15">0</span><span class="stat-suffix">+</span>
+        <p>Lat doświadczenia</p>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number" data-target="850">0</span><span class="stat-suffix">+</span>
+        <p>Zrealizowanych projektów</p>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number" data-target="320">0</span><span class="stat-suffix">+</span>
+        <p>Zadowolonych klientów</p>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number" data-target="100">0</span><span class="stat-suffix">%</span>
+        <p>Gwarancja jakości</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== USŁUGI ===== -->
+  <section class="services section" id="uslugi">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Co oferujemy</span>
+        <h2 class="section-title">Nasze usługi<br /><span>spawalnicze</span></h2>
+        <p class="section-desc">Kompleksowe rozwiązania spawalnicze dostosowane do Twoich potrzeb</p>
+      </div>
+
+      <div class="services__grid">
+        <div class="service-card reveal">
+          <div class="service-card__icon">
+            <i class="fas fa-fire-flame-curved"></i>
+          </div>
+          <h3>Spawanie MIG/MAG</h3>
+          <p>Spawanie metodą MIG/MAG w osłonie gazów obojętnych i aktywnych. Idealne do stali węglowej, nierdzewnej i aluminium. Wysoka wydajność i estetyka spoin.</p>
+          <ul class="service-card__list">
+            <li><i class="fas fa-check"></i> Stal węglowa i nierdzewna</li>
+            <li><i class="fas fa-check"></i> Aluminium i stopy metali</li>
+            <li><i class="fas fa-check"></i> Elementy cienkościenne</li>
+          </ul>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-card__icon">
+            <i class="fas fa-bolt"></i>
+          </div>
+          <h3>Spawanie TIG</h3>
+          <p>Precyzyjne spawanie elektrodą wolframową w osłonie argonu. Najwyższa jakość spoin, niezbędna w przemyśle lotniczym, spożywczym i medycznym.</p>
+          <ul class="service-card__list">
+            <li><i class="fas fa-check"></i> Maksymalna precyzja</li>
+            <li><i class="fas fa-check"></i> Rury i instalacje</li>
+            <li><i class="fas fa-check"></i> Tytan i specjalne stopy</li>
+          </ul>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-card__icon">
+            <i class="fas fa-industry"></i>
+          </div>
+          <h3>Spawanie MMA</h3>
+          <p>Spawanie elektrodą otuloną — niezawodna metoda w trudno dostępnych miejscach, na zewnątrz i przy grubszych materiałach. Sprawdzona od dziesięcioleci.</p>
+          <ul class="service-card__list">
+            <li><i class="fas fa-check"></i> Praca w terenie</li>
+            <li><i class="fas fa-check"></i> Grube przekroje materiałów</li>
+            <li><i class="fas fa-check"></i> Naprawy i remonty</li>
+          </ul>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-card__icon">
+            <i class="fas fa-cubes"></i>
+          </div>
+          <h3>Konstrukcje stalowe</h3>
+          <p>Projektowanie i wykonywanie lekkich oraz ciężkich konstrukcji stalowych: hale przemysłowe, wiaty, platformy, ramy maszyn i urządzeń.</p>
+          <ul class="service-card__list">
+            <li><i class="fas fa-check"></i> Hale i wiaty</li>
+            <li><i class="fas fa-check"></i> Schody i balustrady</li>
+            <li><i class="fas fa-check"></i> Ramy i podkonstrukcje</li>
+          </ul>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-card__icon">
+            <i class="fas fa-tools"></i>
+          </div>
+          <h3>Ślusarstwo</h3>
+          <p>Kompleksowe usługi ślusarskie: cięcie, gięcie, wiercenie, gwintowanie i obróbka metali. Realizacja pojedynczych elementów i serii produkcyjnych.</p>
+          <ul class="service-card__list">
+            <li><i class="fas fa-check"></i> Cięcie laserem i palnikiem</li>
+            <li><i class="fas fa-check"></i> Gięcie i kształtowanie</li>
+            <li><i class="fas fa-check"></i> Produkcja seryjna</li>
+          </ul>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-card__icon">
+            <i class="fas fa-shield-halved"></i>
+          </div>
+          <h3>Naprawy i regeneracja</h3>
+          <p>Naprawa i regeneracja elementów metalowych, portierów, zbiorników, pojazdów roboczych oraz maszyn przemysłowych. Szybkie terminy realizacji.</p>
+          <ul class="service-card__list">
+            <li><i class="fas fa-check"></i> Maszyny rolnicze</li>
+            <li><i class="fas fa-check"></i> Pojazdy i przyczepy</li>
+            <li><i class="fas fa-check"></i> Zbiorniki i rury</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== O NAS ===== -->
+  <section class="about section" id="o-nas">
+    <div class="container about__grid">
+      <div class="about__visual reveal">
+        <div class="about__img-wrap">
+          <div class="about__img-main">
+            <div class="about__img-placeholder">
+              <i class="fas fa-hard-hat"></i>
+            </div>
+          </div>
+          <div class="about__badge-years">
+            <strong>15</strong>
+            <span>lat<br/>w branży</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="about__content reveal">
+        <span class="section-tag">Kim jesteśmy</span>
+        <h2 class="section-title">KAZET – spawalnictwo<br /><span>z tradycją i nowoczesnością</span></h2>
+        <p>Firma KAZET działa na rynku usług spawalniczych od ponad 15 lat. Przez cały ten czas zbudowaliśmy reputację solidnego partnera dla firm produkcyjnych, budowlanych i klientów indywidualnych.</p>
+        <p>Dysponujemy nowoczesnym parkiem maszynowym i certyfikowanymi spawaczami z wieloletnim doświadczeniem. Każde zlecenie realizujemy terminowo, z zachowaniem najwyższych standardów bezpieczeństwa i jakości.</p>
+
+        <div class="about__features">
+          <div class="about__feature">
+            <i class="fas fa-certificate"></i>
+            <div>
+              <strong>Certyfikowani spawacze</strong>
+              <p>Uprawnienia UDT, DIN EN ISO 9606</p>
+            </div>
+          </div>
+          <div class="about__feature">
+            <i class="fas fa-clock"></i>
+            <div>
+              <strong>Szybkie terminy</strong>
+              <p>Ekspresowe realizacje na życzenie</p>
+            </div>
+          </div>
+          <div class="about__feature">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <strong>Dojazd do klienta</strong>
+              <p>Spawanie na miejscu u zleceniodawcy</p>
+            </div>
+          </div>
+          <div class="about__feature">
+            <i class="fas fa-recycle"></i>
+            <div>
+              <strong>Kompleksowa obsługa</strong>
+              <p>Od projektu po gotowy element</p>
+            </div>
+          </div>
+        </div>
+
+        <a href="#kontakt" class="btn btn--primary">Skontaktuj się z nami</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== REALIZACJE ===== -->
+  <section class="portfolio section" id="realizacje">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Portfolio</span>
+        <h2 class="section-title">Nasze<br /><span>realizacje</span></h2>
+        <p class="section-desc">Wybrane projekty, które zrealizowaliśmy dla naszych klientów</p>
+      </div>
+
+      <div class="portfolio__filter reveal">
+        <button class="filter-btn active" data-filter="all">Wszystkie</button>
+        <button class="filter-btn" data-filter="konstrukcje">Konstrukcje</button>
+        <button class="filter-btn" data-filter="naprawy">Naprawy</button>
+        <button class="filter-btn" data-filter="przemysl">Przemysł</button>
+      </div>
+
+      <div class="portfolio__grid">
+        <div class="portfolio-item reveal" data-category="konstrukcje">
+          <div class="portfolio-item__img">
+            <div class="portfolio-item__placeholder"><i class="fas fa-warehouse"></i></div>
+            <div class="portfolio-item__overlay">
+              <h4>Wiata magazynowa</h4>
+              <p>Konstrukcja stalowa 300m²</p>
+              <span class="portfolio-item__tag">Konstrukcje</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-item reveal" data-category="przemysl">
+          <div class="portfolio-item__img">
+            <div class="portfolio-item__placeholder"><i class="fas fa-cog"></i></div>
+            <div class="portfolio-item__overlay">
+              <h4>Rama maszyny CNC</h4>
+              <p>Spawanie precyzyjne TIG</p>
+              <span class="portfolio-item__tag">Przemysł</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-item reveal" data-category="naprawy">
+          <div class="portfolio-item__img">
+            <div class="portfolio-item__placeholder"><i class="fas fa-tractor"></i></div>
+            <div class="portfolio-item__overlay">
+              <h4>Remont maszyny rolniczej</h4>
+              <p>Regeneracja elementów</p>
+              <span class="portfolio-item__tag">Naprawy</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-item reveal" data-category="konstrukcje">
+          <div class="portfolio-item__img">
+            <div class="portfolio-item__placeholder"><i class="fas fa-stairs"></i></div>
+            <div class="portfolio-item__overlay">
+              <h4>Schody i balustrada</h4>
+              <p>Stal nierdzewna, MIG/MAG</p>
+              <span class="portfolio-item__tag">Konstrukcje</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-item reveal" data-category="przemysl">
+          <div class="portfolio-item__img">
+            <div class="portfolio-item__placeholder"><i class="fas fa-flask"></i></div>
+            <div class="portfolio-item__overlay">
+              <h4>Zbiornik inox</h4>
+              <p>Spawanie TIG, stal nierdzewna</p>
+              <span class="portfolio-item__tag">Przemysł</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-item reveal" data-category="naprawy">
+          <div class="portfolio-item__img">
+            <div class="portfolio-item__placeholder"><i class="fas fa-truck"></i></div>
+            <div class="portfolio-item__overlay">
+              <h4>Naprawa naczepy TIR</h4>
+              <p>MMA, praca w terenie</p>
+              <span class="portfolio-item__tag">Naprawy</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DLACZEGO MY ===== -->
+  <section class="why section" id="dlaczego-my">
+    <div class="why__bg"></div>
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Nasze atuty</span>
+        <h2 class="section-title">Dlaczego klienci<br /><span>wybierają KAZET</span></h2>
+      </div>
+
+      <div class="why__grid">
+        <div class="why-item reveal">
+          <div class="why-item__num">01</div>
+          <i class="fas fa-user-shield why-item__icon"></i>
+          <h3>Certyfikowani specjaliści</h3>
+          <p>Nasi spawacze posiadają certyfikaty UDT oraz europejskie uprawnienia DIN EN ISO 9606. Gwarantujemy, że każda spoina spełnia wymagania norm.</p>
+        </div>
+
+        <div class="why-item reveal">
+          <div class="why-item__num">02</div>
+          <i class="fas fa-microchip why-item__icon"></i>
+          <h3>Nowoczesny sprzęt</h3>
+          <p>Pracujemy na profesjonalnych inwertorach spawalniczych renomowanych marek. Nasz sprzęt zapewnia stabilność łuku i powtarzalność parametrów.</p>
+        </div>
+
+        <div class="why-item reveal">
+          <div class="why-item__num">03</div>
+          <i class="fas fa-handshake why-item__icon"></i>
+          <h3>Rzetelna wycena</h3>
+          <p>Bezpłatna i przejrzysta wycena każdego zlecenia. Bez ukrytych kosztów — płacisz dokładnie tyle, ile zostało uzgodnione.</p>
+        </div>
+
+        <div class="why-item reveal">
+          <div class="why-item__num">04</div>
+          <i class="fas fa-calendar-check why-item__icon"></i>
+          <h3>Dotrzymujemy terminów</h3>
+          <p>Terminy realizacji to dla nas priorytet. Jeśli umówiliśmy się na datę, możesz być pewien, że praca będzie gotowa na czas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== OPINIE ===== -->
+  <section class="testimonials section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Opinie</span>
+        <h2 class="section-title">Co mówią<br /><span>nasi klienci</span></h2>
+      </div>
+
+      <div class="testimonials__track reveal">
+        <div class="testimonial-card">
+          <div class="testimonial-card__stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p>"Zleciliśmy wykonanie konstrukcji stalowej pod halę. Praca wykonana terminowo, spoiny bez zastrzeżeń. Polecamy wszystkim firmom szukającym solidnego partnera spawalniczego."</p>
+          <div class="testimonial-card__author">
+            <div class="author-avatar">MK</div>
+            <div>
+              <strong>Marek Kowalski</strong>
+              <span>Właściciel firmy budowlanej</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-card__stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p>"Naprawa maszyny rolniczej wykonana ekspresowo – firma przyjechała do nas na miejsce. Fachowe podejście, uczciwa cena. Będziemy wracać!"</p>
+          <div class="testimonial-card__author">
+            <div class="author-avatar">AW</div>
+            <div>
+              <strong>Adam Wiśniewski</strong>
+              <span>Rolnik, woj. mazowieckie</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-card__stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p>"Schody ze stali nierdzewnej — efekt wizualnie niesamowity. Jakość spoin TIG na najwyższym poziomie. Sąsiedzi pytają, kto wykonał te schody!"</p>
+          <div class="testimonial-card__author">
+            <div class="author-avatar">JN</div>
+            <div>
+              <strong>Joanna Nowak</strong>
+              <span>Klientka indywidualna</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA BANNER ===== -->
+  <section class="cta-banner">
+    <div class="cta-banner__bg"></div>
+    <div class="container cta-banner__content reveal">
+      <h2>Potrzebujesz wyceny?</h2>
+      <p>Skontaktuj się z nami — bezpłatna wycena w ciągu 24 godzin</p>
+      <div class="cta-banner__actions">
+        <a href="tel:+48000000000" class="btn btn--primary">
+          <i class="fas fa-phone"></i> Zadzwoń teraz
+        </a>
+        <a href="#kontakt" class="btn btn--ghost-light">
+          <i class="fas fa-envelope"></i> Napisz do nas
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== KONTAKT ===== -->
+  <section class="contact section" id="kontakt">
+    <div class="container contact__grid">
+      <div class="contact__info reveal">
+        <span class="section-tag">Kontakt</span>
+        <h2 class="section-title">Skontaktuj się<br /><span>z nami</span></h2>
+        <p>Jesteśmy dostępni od poniedziałku do piątku w godzinach 7:00–17:00. Chętnie odpowiemy na każde pytanie i przygotujemy bezpłatną wycenę.</p>
+
+        <div class="contact__details">
+          <a href="tel:+48000000000" class="contact__item">
+            <div class="contact__item-icon"><i class="fas fa-phone"></i></div>
+            <div>
+              <strong>Telefon</strong>
+              <span>+48 000 000 000</span>
+            </div>
+          </a>
+          <a href="mailto:kontakt@kazet.eu" class="contact__item">
+            <div class="contact__item-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <strong>Email</strong>
+              <span>kontakt@kazet.eu</span>
+            </div>
+          </a>
+          <div class="contact__item">
+            <div class="contact__item-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <strong>Adres</strong>
+              <span>ul. Przykładowa 1, 00-000 Miasto</span>
+            </div>
+          </div>
+          <div class="contact__item">
+            <div class="contact__item-icon"><i class="fas fa-clock"></i></div>
+            <div>
+              <strong>Godziny pracy</strong>
+              <span>Pon–Pt: 7:00–17:00 | Sob: 8:00–13:00</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact__form-wrap reveal">
+        <form class="contact__form" id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="name">Imię i nazwisko *</label>
+            <input type="text" id="name" name="name" placeholder="Jan Kowalski" required />
+          </div>
+          <div class="form-group">
+            <label for="phone">Telefon *</label>
+            <input type="tel" id="phone" name="phone" placeholder="+48 000 000 000" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="jan@firma.pl" />
+          </div>
+          <div class="form-group">
+            <label for="service">Rodzaj usługi</label>
+            <select id="service" name="service">
+              <option value="">— wybierz —</option>
+              <option value="mig-mag">Spawanie MIG/MAG</option>
+              <option value="tig">Spawanie TIG</option>
+              <option value="mma">Spawanie MMA</option>
+              <option value="konstrukcje">Konstrukcje stalowe</option>
+              <option value="slusarstwo">Ślusarstwo</option>
+              <option value="naprawy">Naprawy i regeneracja</option>
+              <option value="inne">Inne</option>
+            </select>
+          </div>
+          <div class="form-group form-group--full">
+            <label for="message">Opis zlecenia *</label>
+            <textarea id="message" name="message" rows="5" placeholder="Opisz swoje zlecenie, podaj wymiary lub przybliżony zakres prac..." required></textarea>
+          </div>
+          <div class="form-group form-group--full form-group--check">
+            <label class="checkbox-label">
+              <input type="checkbox" id="rodo" name="rodo" required />
+              <span>Wyrażam zgodę na przetwarzanie danych osobowych zgodnie z Polityką Prywatności *</span>
+            </label>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">
+            <i class="fas fa-paper-plane"></i> Wyślij zapytanie
+          </button>
+          <div class="form-status" id="formStatus"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a href="#hero" class="nav__logo">
+          <span class="logo-kaz">KA</span><span class="logo-zet">ZET</span>
+        </a>
+        <p>Profesjonalne usługi spawalnicze z wieloletnim doświadczeniem. Jakość, terminowość, rzetelność.</p>
+        <div class="footer__social">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <div class="footer__col">
+        <h4>Usługi</h4>
+        <ul>
+          <li><a href="#uslugi">Spawanie MIG/MAG</a></li>
+          <li><a href="#uslugi">Spawanie TIG</a></li>
+          <li><a href="#uslugi">Spawanie MMA</a></li>
+          <li><a href="#uslugi">Konstrukcje stalowe</a></li>
+          <li><a href="#uslugi">Ślusarstwo</a></li>
+          <li><a href="#uslugi">Naprawy i regeneracja</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4>Firma</h4>
+        <ul>
+          <li><a href="#o-nas">O nas</a></li>
+          <li><a href="#realizacje">Realizacje</a></li>
+          <li><a href="#dlaczego-my">Dlaczego my</a></li>
+          <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4>Kontakt</h4>
+        <ul class="footer__contact">
+          <li><i class="fas fa-phone"></i> <a href="tel:+48000000000">+48 000 000 000</a></li>
+          <li><i class="fas fa-envelope"></i> <a href="mailto:kontakt@kazet.eu">kontakt@kazet.eu</a></li>
+          <li><i class="fas fa-map-marker-alt"></i> ul. Przykładowa 1, Miasto</li>
+          <li><i class="fas fa-clock"></i> Pon–Pt: 7:00–17:00</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container">
+        <p>&copy; 2025 KAZET – Usługi Spawalnicze. Wszelkie prawa zastrzeżone.</p>
+        <p><a href="#">Polityka prywatności</a> · <a href="#">RODO</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="backToTop" aria-label="Wróć na górę">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
